@@ -1,20 +1,15 @@
-# Checklist Lab 02
+# Checklist Lab 02 — Queue Async (Rubric B) — Pair 05
 
-- [ ] Đã xác định đúng cặp đàm phán.
-- [ ] Đã đọc đúng user story trong thư mục `user-stories/`.
-- [ ] Provider đã điền `docs/analysis-provider.md`.
-- [ ] Consumer đã điền `docs/analysis-consumer.md`.
-- [ ] `openapi.yaml` khai báo `openapi: 3.1.0`.
-- [ ] Có tối thiểu 4 path.
-- [ ] Mỗi operation có `operationId`, `summary`, `description`, `tags`.
-- [ ] Schema lớn đã đưa vào `components/schemas`.
-- [ ] Có `oneOf` + `discriminator`.
-- [ ] Có union type với `null`, không dùng `nullable: true`.
-- [ ] Có `Problem` schema cho response lỗi.
-- [ ] `spectral lint` không có severity error.
-- [ ] Đã lưu `evidence/buoi-02/spectral-report.txt`.
-- [ ] Prism mock server chạy được ở port 4010.
-- [ ] Có 5 ảnh request mẫu trong `mock-screenshots/`.
-- [ ] `negotiation-log.md` có tối thiểu 6 issue.
-- [ ] Có sign-off Provider, Consumer, Witness.
-- [ ] Đã hoàn thiện `VERSIONING.md` cho bài tập về nhà.
+- [x] Đã xác định đúng cặp đàm phán (IoT Ingestion ↔ Core Business).
+- [x] Đã đọc đúng user story `user-stories/pair-05-iot-core-async.md`.
+- [x] Đã hoàn thành `docs/event-contract-template.md` với đầy đủ Producer, Consumer, Event Name, Topic.
+- [x] Đã viết payload schema sơ bộ kèm 2 ví dụ JSON (sensor.reading.created và sensor.threshold.exceeded).
+- [x] Nêu rõ `eventId` (UUID v4) và `correlationId` (deviceId).
+- [x] Đã xét edge cases: duplicate event, stale event, invalid value, unknown device.
+- [x] `negotiation-log.md` có đủ 6 issue (đơn vị đo, locationId, stale event, idempotency, tách event, CloudEvents).
+- [x] Mỗi issue có đầy đủ: concern, proposal, resolution, rationale, impact.
+- [x] Có sign-off Producer (B1), Consumer (B6), Witness.
+- [x] Đã chốt hướng chuyển tiếp sang Lab 03 (AsyncAPI, Message Broker, Dead-letter queue).
+- [x] Đã cập nhật `VERSIONING.md` cho phiên bản event contract.
+- [x] Provider analysis (`docs/analysis-provider.md`) đã điền đầy đủ.
+- [x] Consumer analysis (`docs/analysis-consumer.md`) đã điền đầy đủ.
